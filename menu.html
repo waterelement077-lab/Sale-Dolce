@@ -1820,7 +1820,7 @@
             arButtons.forEach(button => {
                 const modelPath = modelPaths[button.id];
                 
-                if (device.supportsAR) {
+                if (device.supportsAR && modelPath) {
                     // Update button text based on device
                     if (device.isIOS) {
                         button.innerHTML = '📱 AR';
@@ -1830,12 +1830,12 @@
                         button.title = 'Vedere în AR (Android)';
                     }
                     
-                    // Add click handler
+                    // Add click handler with the correct model path
                     button.addEventListener('click', function() {
                         handleARClick(modelPath);
                     });
                 } else {
-                    // Disable button for unsupported devices
+                    // Disable button for unsupported devices or missing model
                     button.disabled = true;
                     button.innerHTML = '🔍 AR';
                     button.title = 'AR doar pe mobil';
