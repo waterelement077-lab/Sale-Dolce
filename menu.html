@@ -1763,7 +1763,7 @@
             };
         }
 
-        function handleARClick(modelPath, isUSDZ = false) {
+        function handleARClick(modelPath, buttonElement) {
             const device = detectDevice();
             
             if (!device.supportsAR) {
@@ -1771,8 +1771,9 @@
                 return;
             }
 
-            // Get model-viewer element
-            const modelViewer = document.querySelector('model-viewer');
+            // Get the specific model-viewer element for this dish
+            const plateViewer = buttonElement.closest('.plate-viewer');
+            const modelViewer = plateViewer ? plateViewer.querySelector('model-viewer') : null;
             
             // Try using model-viewer's built-in AR first
             if (modelViewer && typeof modelViewer.activateAR === 'function' && modelViewer.canActivateAR) {
@@ -1832,7 +1833,7 @@
                     
                     // Add click handler with the correct model path
                     button.addEventListener('click', function() {
-                        handleARClick(modelPath);
+                        handleARClick(modelPath, this);
                     });
                 } else {
                     // Disable button for unsupported devices or missing model
