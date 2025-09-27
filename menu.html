@@ -425,9 +425,6 @@
             <h2 class="section-title" id="bruschetteria">Bruschetteria</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Bruschetta Prosciutto Crudo e Porcini" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Bruschetta Prosciutto Crudo e Porcini</h3>
                     <p class="item-description">Pâine, mozzarella di bufala, hribi, prosciutto crudo - 350g</p>
@@ -436,9 +433,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Bruschetta Caprese" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Bruschetta Caprese</h3>
                     <p class="item-description">Pâine, mozzarella di bufala, roșii cherry, busuioc - 350g</p>
@@ -447,9 +441,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Bruschette cu Roșii și Anșoa" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Bruschette cu Roșii și Anșoa</h3>
                     <p class="item-description">Pâine, roșii, anșoa, ceapă, ardei iute - 300g</p>
@@ -458,9 +449,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Bruschette cu Avocado" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Bruschette cu Avocado</h3>
                     <p class="item-description">Pâine, guacamole, ou fiert - 350g</p>
@@ -473,8 +461,28 @@
             <h2 class="section-title" id="panini">Panini / Sandwich</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Panini Bologna" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-panini-bologna" data-model="models/panini-bologna.usdz">
+                    <img src="images/panini-bologna.jpg" alt="Panini Bologna" class="food-image" id="food-image-panini-bologna">
+                    <model-viewer
+                        id="model-viewer-panini-bologna"
+                        src="models/panini-bologna.glb"
+                        ios-src="models/panini-bologna.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-panini-bologna" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-panini-bologna" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Panini Bologna</h3>
@@ -484,9 +492,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Panini Napoli" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Panini Napoli</h3>
                     <p class="item-description">Focaccia, salam, salată, roșii, emmentaler, sos maioneză - 530g</p>
@@ -495,8 +500,28 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Panini Parma" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-panini-parma" data-model="models/panini-parma.usdz">
+                    <img src="images/parma-panini.jpg" alt="Panini Parma" class="food-image" id="food-image-panini-parma">
+                    <model-viewer
+                        id="model-viewer-panini-parma"
+                        src="models/panini-parma.glb"
+                        ios-src="models/panini-parma.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-panini-parma" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-panini-parma" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Panini Parma</h3>
@@ -506,8 +531,28 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Panini Caprese" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-panini-caprese" data-model="models/panini-caprese.usdz">
+                    <img src="images/panini-caprese.jpg" alt="Panini Caprese" class="food-image" id="food-image-panini-caprese">
+                    <model-viewer
+                        id="model-viewer-panini-caprese"
+                        src="models/panini-caprese.glb"
+                        ios-src="models/panini-caprese.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-panini-caprese" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-panini-caprese" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Panini Caprese</h3>
@@ -517,8 +562,28 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Brisket Sandwich" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-brisket-sandwich" data-model="models/brisket-sandwich.usdz">
+                    <img src="images/brisket-sandwich.jpg" alt="Brisket Sandwich" class="food-image" id="food-image-brisket-sandwich">
+                    <model-viewer
+                        id="model-viewer-brisket-sandwich"
+                        src="models/brisket-sandwich.glb"
+                        ios-src="models/brisket-sandwich.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-brisket-sandwich" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-brisket-sandwich" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Brisket Sandwich</h3>
@@ -528,8 +593,28 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Pulled Pork Sandwich" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-pulled-pork" data-model="models/pulled-pork-sandwich.usdz">
+                    <img src="images/pulled-pork-sandwich.jpg" alt="Pulled Pork Sandwich" class="food-image" id="food-image-pulled-pork">
+                    <model-viewer
+                        id="model-viewer-pulled-pork"
+                        src="models/PULLED PORK SANDWICH.glb"
+                        ios-src="models/pulled-pork-sandwich.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-pulled-pork" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-pulled-pork" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Pulled Pork Sandwich</h3>
@@ -539,9 +624,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Tacchino Sandwich" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tacchino Sandwich</h3>
                     <p class="item-description">Pâine flaguette, șnițel de curcan, roșii, cheddar, salată, maioneză - 450g</p>
@@ -550,9 +632,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Tacos Pollo Diavola" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tacos Pollo Diavola</h3>
                     <p class="item-description">Lipie cu sfeclă roșie, piept pui, ardei California, ardei iute, cheddar, sweet chilli - 450g</p>
@@ -565,9 +644,6 @@
             <h2 class="section-title" id="antreuri">Antreuri</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Burrata" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Burrata</h3>
                     <p class="item-description">Lipie, rucola, roșii, ulei de măsline, busuioc - preț per 100g</p>
@@ -576,9 +652,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Mozzarella di Bufala" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Mozzarella di Bufala</h3>
                     <p class="item-description">Lipie, rucola, roșii, ulei de măsline, busuioc - preț per 100g</p>
@@ -587,9 +660,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Salată Vinete" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Salată Vinete</h3>
                     <p class="item-description">Vinete, ceapă, ardei gras copt, roșii, ulei de măsline, pătrunjel, pâine prăjită - 300g</p>
@@ -598,9 +668,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Tartar Vită" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tartar Vită</h3>
                     <p class="item-description">Mușchi de vită, capere, castraveți murați, ceapă, roșii uscate, lămâie, ou, pâine prăjită - 350g</p>
@@ -609,9 +676,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tartar-ton.jpg" alt="Tartar Ton" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tartar Ton</h3>
                     <p class="item-description">Ton, capere, roșii uscate, ceapă roșie, avocado, salată misticanza, pâine prăjită - 350g</p>
@@ -628,9 +692,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Platou Mediteraneean" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Platou Mediteraneean (minim 2 pers.)</h3>
                     <p class="item-description">Prosciutto crudo, mortadella cu fistic, salam napoli, salam ungherese, spianata romana picant, prosciutto cotto, taleggio, primo sale, grana padano, pecorino sardo, gouda cu trufe, focaccia, merișoare - 800g</p>
@@ -639,9 +700,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Creveți în Crustă de Cartofi" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Creveți în Crustă de Cartofi</h3>
                     <p class="item-description">Creveți, cartofi, sos sweet chilli - 320g</p>
@@ -650,9 +708,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Scoici Saint Jacques" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Scoici Saint Jacques</h3>
                     <p class="item-description">Saint Jacques, unt, făină, fresh de portocale, sare, piper - 150g</p>
@@ -661,8 +716,28 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Supă Midii" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-supa-midii" data-model="models/supa-midii.usdz">
+                    <img src="images/supa-midii.jpg" alt="Supă Midii" class="food-image" id="food-image-supa-midii">
+                    <model-viewer
+                        id="model-viewer-supa-midii"
+                        src="models/supa-midii.glb"
+                        ios-src="models/supa-midii.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-supa-midii" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-supa-midii" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Supă Midii</h3>
@@ -672,9 +747,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Souté de Vongole" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Souté de Vongole</h3>
                     <p class="item-description">Vongole, ulei de măsline, usturoi, pătrunjel, peperoncino, vin alb, pâine prăjită - 700g</p>
@@ -683,9 +755,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Creveți Argentina" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Creveți Argentina în Sos de Vin Alb</h3>
                     <p class="item-description">Creveți, unt, usturoi, pătrunjel, vin alb, pâine prăjită - 400g</p>
@@ -694,9 +763,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Rapane la Plită" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Rapane la Plită</h3>
                     <p class="item-description">Rapane, usturoi, ardei iute - 250g</p>
@@ -705,9 +771,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Captura Zilei" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Captura Zilei</h3>
                     <p class="item-description">Scorpie de mare, rândunică de mare, cod, stavrid, sardină, etc - 600g</p>
@@ -716,9 +779,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Fritto Misto" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Fritto Misto</h3>
                     <p class="item-description">Calamari, creveți Argentina, tentacule de calamar, legume, sos tzatziki - 600g</p>
@@ -731,9 +791,6 @@
             <h2 class="section-title" id="supe">Supe / Ciorbe</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Supă Cremă de Roșii" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Supă Cremă de Roșii</h3>
                     <p class="item-description">Roșii decojite, ceapă, morcov, apio, usturoi, busuioc, pâine prăjită - 400ml</p>
@@ -742,9 +799,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Ciorbă de Burtă" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Ciorbă de Burtă</h3>
                     <p class="item-description">Burtă, smântână, usturoi, ou, oțet - 400ml</p>
@@ -753,9 +807,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Ciorbă Perișoare" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Ciorbă Perișoare</h3>
                     <p class="item-description">Carne tocată de porc și vită, legume, borș, verdeață - 400ml</p>
@@ -799,9 +850,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Spaghetti alla Chitarra A.O.P." class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Spaghetti alla Chitarra A.O.P.</h3>
                     <p class="item-description">Paste, ulei de măsline, usturoi, peperoncino - 200g</p>
@@ -810,9 +858,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Gnocchi alla Sorrentina" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Gnocchi alla Sorrentina</h3>
                     <p class="item-description">Paste din cartofi, sos de roșii, mozzarella di bufala, busuioc, usturoi, sare - 400g</p>
@@ -852,9 +897,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Bon Bon Tricolore" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Bon Bon Tricolore</h3>
                     <p class="item-description">Paste umplute cu ricotta, spanac și sfeclă roșie, smântână, grana padano - 200g</p>
@@ -863,9 +905,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Tortelloni Giganti ai Funghi Porcini" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tortelloni Giganti ai Funghi Porcini</h3>
                     <p class="item-description">Paste umplute cu hribi, smântână, grana padano, cremă de trufe, sos de roșii - 200g</p>
@@ -874,9 +913,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Fagottini ai Formaggio e Pere" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Fagottini ai Formaggio e Pere</h3>
                     <p class="item-description">Paste umplute cu brânză și pere, smântână, gorgonzola, nuci - 350g</p>
@@ -916,9 +952,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Tagliatelle Ragu Bolognese" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tagliatelle Ragu Bolognese</h3>
                     <p class="item-description">Paste, sos ragu, grana padano - 400g</p>
@@ -958,9 +991,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Tagliatelle Profumo di Mare" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tagliatelle Profumo di Mare</h3>
                     <p class="item-description">Paste, midii, calamari, creveți, langustine, sos de roșii, usturoi, busuioc, pătrunjel - 650g</p>
@@ -969,9 +999,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Spaghetti alla Chitarra alle Vongole" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Spaghetti alla Chitarra alle Vongole</h3>
                     <p class="item-description">Paste, vongole, ulei de măsline, usturoi, peperoncino, pătrunjel - 650g</p>
@@ -1011,9 +1038,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Gnocchi ai Gamberi Zucchine" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Gnocchi ai Gamberi Zucchine</h3>
                     <p class="item-description">Paste din cartofi, creveți, dovlecel, sos de roșii, usturoi, pătrunjel - 400g</p>
@@ -1026,9 +1050,6 @@
             <h2 class="section-title" id="risotti">Risotti</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-risotto-porcini.jpg" alt="Risotto ai Funghi Porcini e Tartufo" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Risotto ai Funghi Porcini e Tartufo</h3>
                     <p class="item-description">Orez carnaroli, hribi, trufe, smântână UHT 32%, pătrunjel, usturoi, grana padano - 350g</p>
@@ -1037,9 +1058,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Risotto con Gamberi e Asparagi" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Risotto con Gamberi e Asparagi</h3>
                     <p class="item-description">Orez carnaroli, creveți Argentina, sparanghel, smântână UHT 32% - 400g</p>
@@ -1048,9 +1066,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Risotto alla Pescatora" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Risotto alla Pescatora</h3>
                     <p class="item-description">Orez carnaroli, calamari, creveți, midii, vongole, pătrunjel, usturoi - 500g</p>
@@ -1063,9 +1078,6 @@
             <h2 class="section-title" id="fel-principal">Fel Principal</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Măduvă de Vită la Cuptor" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Măduvă de Vită la Cuptor</h3>
                     <p class="item-description">Sos de hrean, mujdei de usturoi, pătrunjel și ardei iute, pâine prăjită - 1200g</p>
@@ -1074,8 +1086,28 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Limbă de Vită cu Măsline" class="food-image">
+                <div class="plate-viewer" id="plate-viewer-limba-vita" data-model="models/limba-de-vita-cu-masline.usdz">
+                    <img src="images/limba-de-vite-cu-masline.jpg" alt="Limbă de Vită cu Măsline" class="food-image" id="food-image-limba-vita">
+                    <model-viewer
+                        id="model-viewer-limba-vita"
+                        src="models/limba-de-vite-cu-masline.glb"
+                        ios-src="models/limba-de-vita-cu-masline.usdz"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        min-camera-orbit="auto 0deg auto"
+                        max-camera-orbit="auto 55deg auto"
+                        camera-orbit="0deg 40deg auto"
+                        style="width: 100%; height: 100%; display: none;">
+                    </model-viewer>
+                    <button class="view-360-button" id="view-360-limba-vita" title="View in 360°">
+                        360°
+                    </button>
+                    <button class="ar-button" id="ar-button-limba-vita" title="View in AR">
+                        📱 AR
+                    </button>
                 </div>
                 <div class="item-info">
                     <h3 class="item-name">Limbă de Vită cu Măsline</h3>
@@ -1085,9 +1117,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Coaste de Porc în Sos BBQ" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Coaste de Porc în Sos BBQ</h3>
                     <p class="item-description">Coaste de porc, sos BBQ, salată coleslaw - 600g</p>
@@ -1096,9 +1125,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Muschi de Vită în Sos de Piper Verde" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Muschi de Vită în Sos de Piper Verde</h3>
                     <p class="item-description">Muschi de vită, piper verde, smântână UHT 32%, muștar boabe, sos de soia - 350g</p>
@@ -1107,9 +1133,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Pulpă de Rață Confiată" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Pulpă de Rață Confiată</h3>
                     <p class="item-description">Pulpă de rață, piure de cartofi cu salsa tartufata - 400g</p>
@@ -1118,9 +1141,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Ceafă de Porc Wellington" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Ceafă de Porc Wellington în Sos Gorgonzola și Ciuperci</h3>
                     <p class="item-description">Ceafă de porc, aluat de foietaj, gorgonzola, ciuperci champignon, smântână UHT 32% - 450g</p>
@@ -1129,9 +1149,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Stinco di Maiale" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Stinco di Maiale</h3>
                     <p class="item-description">Ciolan de porc, ardei gras, ceapă, ardei iute, usturoi, pătrunjel - 650g</p>
@@ -1140,9 +1157,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Șnițel de Pui" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Șnițel de Pui</h3>
                     <p class="item-description">Piept de pui, făină, pesmet, ou, sare, sos tzatziki - 250g</p>
@@ -1151,9 +1165,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Șnițel de Curcan" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Șnițel de Curcan</h3>
                     <p class="item-description">Piept de curcan, făină, pesmet, ou, sare, sos tzatziki - 250g</p>
@@ -1162,9 +1173,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Șnițel de Vită" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Șnițel de Vită</h3>
                     <p class="item-description">Muschi de vită, făină, pesmet, ou, sare, sos tzatziki - 250g</p>
@@ -1173,9 +1181,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Scaloppina di Pollo Gorgonzola" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Scaloppina di Pollo Gorgonzola</h3>
                     <p class="item-description">Piept de pui, ciuperci champignon, gorgonzola dulce, smântână UHT 32%, pătrunjel - 400g</p>
@@ -1212,9 +1217,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Pastramă de Oaie" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Pastramă de Oaie</h3>
                     <p class="item-description">300g</p>
@@ -1223,9 +1225,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Cârnați de Pleșcoi" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Cârnați de Pleșcoi</h3>
                     <p class="item-description">300g</p>
@@ -1234,9 +1233,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Piept de Curcan" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Piept de Curcan</h3>
                     <p class="item-description">250g</p>
@@ -1245,9 +1241,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Piept de Pui" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Piept de Pui</h3>
                     <p class="item-description">250g</p>
@@ -1256,9 +1249,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Ceafă de Porc" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Ceafă de Porc</h3>
                     <p class="item-description">250g</p>
@@ -1279,9 +1269,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Frigărui de Creveți Argentina" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Frigărui de Creveți Argentina</h3>
                     <p class="item-description">300g</p>
@@ -1290,9 +1277,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Frigărui de Calamari" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Frigărui de Calamari</h3>
                     <p class="item-description">350g</p>
@@ -1301,9 +1285,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Ton Roșu" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Ton Roșu</h3>
                     <p class="item-description">250g</p>
@@ -1312,9 +1293,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Somon" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Somon</h3>
                     <p class="item-description">350g</p>
@@ -1331,9 +1309,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Calcan cu Legume" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Calcan cu Legume</h3>
                     <p class="item-description">Calcan, cartofi, vinete, dovlecel, ardei gras, măsline, roșii, ulei, usturoi, pătrunjel, sare - preț per 100g</p>
@@ -1354,9 +1329,6 @@
             <h2 class="section-title" id="garnituri">Garnituri</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Sparanghel Grill" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Sparanghel Grill</h3>
                     <p class="item-description">200g</p>
@@ -1365,9 +1337,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Legume Grătar" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Legume Grătar</h3>
                     <p class="item-description">Vinete, dovlecel, roșie, ardei gras, ceapă roșie - 350g</p>
@@ -1376,9 +1345,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Legume Prăjite" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Legume Prăjite</h3>
                     <p class="item-description">Dovlecel, morcov, ardei gras, vinete - 250g</p>
@@ -1387,9 +1353,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Broccoli Souté" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Broccoli Souté</h3>
                     <p class="item-description">Broccoli, usturoi, ulei de măsline - 300g</p>
@@ -1398,9 +1361,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Piure de Cartofi" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Piure de Cartofi</h3>
                     <p class="item-description">Cartofi, unt, lapte, sare - 300g</p>
@@ -1409,9 +1369,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Cartofi Prăjiți" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Cartofi Prăjiți</h3>
                     <p class="item-description">Cartofi, sare, cimbru, sos tzatziki - 300g</p>
@@ -1420,9 +1377,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Cartofi Cuptor" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Cartofi Cuptor</h3>
                     <p class="item-description">Cartofi, rozmarin, salvie, usturoi - 300g</p>
@@ -1451,9 +1405,6 @@
             <h2 class="section-title" id="salate">Salate</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-neri.jpg" alt="Salată Grecească" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Salată Grecească</h3>
                     <p class="item-description">Roșii, castraveți, ardei gras, măsline, ceapă, brânză feta, oregano, ulei de măsline, zeamă de lămâie - 400g</p>
@@ -1462,9 +1413,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tortelloni-ricotta.jpg" alt="Salată Mixtă" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Salată Mixtă</h3>
                     <p class="item-description">Salată verde, roșii, castraveți, ardei, ulei de măsline, zeamă de lămâie - 300g</p>
@@ -1497,9 +1445,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-carbonara.jpg" alt="Salată cu Somon Afumat" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Salată cu Somon Afumat</h3>
                     <p class="item-description">Salată misticanza, roșii, merișoare, somon afumat, ulei de măsline, zeamă de lămâie, sare - 400g</p>
@@ -1512,9 +1457,6 @@
             <h2 class="section-title" id="deserturi">Deserturi</h2>
             
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-pappardelle-porcini.jpg" alt="Înghețată Artizanală" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Înghețată Artizanală</h3>
                     <p class="item-description">Înghețată amarena, ricotta cu smochine, gianduja, fistic, caramel sărat - 300g</p>
@@ -1523,9 +1465,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tiramisu.jpg" alt="Tiramisu" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Tiramisu</h3>
                     <p class="item-description">Pișcoturi, ou, zahăr, smântână vegetală, mascarpone, cacao, espresso - 150g</p>
@@ -1534,9 +1473,6 @@
             </div>
 
             <div class="menu-item">
-                <div class="plate-viewer">
-                    <img src="images/placeholder-tagliolini-nero.jpg" alt="Panna Cotta cu Fructe de Pădure" class="food-image">
-                </div>
                 <div class="item-info">
                     <h3 class="item-name">Panna Cotta cu Fructe de Pădure</h3>
                     <p class="item-description">Smântână UHT 32%, gelatină, zahăr, fructe de pădure - 150g</p>
@@ -1812,10 +1748,17 @@
             // Map AR button IDs to their corresponding model paths
             const modelPaths = {
                 'ar-button-1': 'models/placeholder-carbonara.glb',
-                'ar-button-2': 'models/placeholder-pappardelle-porcini.glb', 
+                'ar-button-2': 'models/placeholder-pappardelle-porcini.glb',
                 'ar-button-3': 'models/placeholder-tortelloni-neri.glb',
                 'ar-button-4': 'models/placeholder-tagliolini-nero.glb',
-                'ar-button-5': 'models/placeholder-tortelloni-ricotta.glb'
+                'ar-button-5': 'models/placeholder-tortelloni-ricotta.glb',
+                'ar-button-panini-bologna': 'models/panini-bologna.glb',
+                'ar-button-panini-parma': 'models/panini-parma.glb',
+                'ar-button-panini-caprese': 'models/panini-caprese.glb',
+                'ar-button-brisket-sandwich': 'models/brisket-sandwich.glb',
+                'ar-button-pulled-pork': 'models/PULLED PORK SANDWICH.glb',
+                'ar-button-supa-midii': 'models/supa-midii.glb',
+                'ar-button-limba-vita': 'models/limba-de-vite-cu-masline.glb'
             };
             
             arButtons.forEach(button => {
